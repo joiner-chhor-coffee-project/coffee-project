@@ -96,7 +96,7 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 coffeeSearch.addEventListener('keydown', coffeeName);
-submitButton.addEventListener('click', updateCoffees);
+roastSelection.addEventListener('change', updateCoffees);
 
 
 
