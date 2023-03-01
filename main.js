@@ -11,11 +11,11 @@ function renderCoffee(coffee) {
 }
 
 function renderCoffees(coffees) {
-    var html = '<div class="col-lg-6 col-md-4 col-sm-6">';
+    var html = '<div class="col-lg-3 col-md-4 col-sm-6">';
     for(var i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
         if (i % 3 == 2) {
-            html += "</div><div class='col-lg-6 col-md-4 col-sm-6'>";
+            html += "</div><div class='col-lg-4 col-md-3 col-sm-6'>";
         }
         html += renderCoffees (coffees[i]);
 
@@ -29,13 +29,35 @@ function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
-            filteredCoffees.push(coffee);
-        }
-    });
+
+    //
+    if (selectedRoast === 'All') { // displays all roast types
+        filteredCoffees = coffees;
+    } else {
+    //
+
+        coffees.forEach(function (coffee) {
+            if (coffee.roast === selectedRoast) {
+                filteredCoffees.push(coffee);
+            }
+        });
+    }
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+function coffeeName(e) {
+    e.preventDefault();
+    var selectedName = coffeeSearch.toLowerCase();
+    var filteredCoffeesName = [];
+
+    coffees.forEach(function (coffee) {
+        if (coffee.roast.toLowerCase(selectedName)) {
+            filteredCoffeesName.push(coffee);
+        }
+    });
+    tbody.innerHTML = renderCoffees((filteredCoffeesName))
+}
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -58,7 +80,13 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var coffeeSearch = document.querySelector('#coffee-search');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+submitButton.addEventListener('click', function(e) {
+    updateCoffees(e);
+    updateCoffeeName(e);
+});
+
