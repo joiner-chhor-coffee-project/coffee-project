@@ -31,31 +31,37 @@ function updateCoffees(e) {
     var filteredCoffees = [];
 
     //
+    //
+
+    //
+
     if (selectedRoast === 'All') { // displays all roast types
         filteredCoffees = coffees;
     } else {
-    //
+        //
 
         coffees.forEach(function (coffee) {
             if (coffee.roast === selectedRoast) {
                 filteredCoffees.push(coffee);
             }
         });
+
+        tbody.innerHTML = renderCoffees(filteredCoffees);
+
     }
-    tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
 function coffeeName(e) {
-    e.preventDefault();
-    var selectedName = coffeeSearch.toLowerCase();
+    //e.preventDefault();
+    var selectedName = coffeeSearch.value.toLowerCase();
     var filteredCoffeesName = [];
-
+    //
     coffees.forEach(function (coffee) {
-        if (coffee.roast.toLowerCase(selectedName)) {
+        if (coffee.name.toLowerCase().includes(selectedName)) {
             filteredCoffeesName.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees((filteredCoffeesName))
+     tbody.innerHTML = renderCoffees(filteredCoffeesName);
 }
 
 
@@ -80,13 +86,23 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+
+
+
 var coffeeSearch = document.querySelector('#coffee-search');
 
 
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', function(e) {
-    updateCoffees(e);
-    updateCoffeeName(e);
-});
+
+coffeeSearch.addEventListener('keydown', coffeeName);
+submitButton.addEventListener('click', updateCoffees);
+
+
+
+// submitButton.addEventListener('click', function(e) {
+//     updateCoffees(e);
+//     coffeeName(e);
+// });
+
 
