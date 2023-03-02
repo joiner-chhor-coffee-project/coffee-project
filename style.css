@@ -26,6 +26,8 @@ label {
     border-radius: .3em;
     border: none;
     margin-top: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 #coffee-search {
@@ -33,10 +35,22 @@ label {
     border: 1px solid grey;
 }
 
+#coffee-search:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+
+}
+
 #roast-selection {
     border-radius: .3em;
     border: 1px solid grey;
+}
 
+#roast-selection:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 
 .coffee {
@@ -55,17 +69,16 @@ label {
 
 .coffee p {
     text-align: center;
+    display: inline;
+    margin-left: .5em;
+    color: #939292;
 }
 
 .coffee h3  {
     display: inline;
     text-align: left;
 }
-p {
-    display: inline;
-    margin-left: .5em;
-    color: #939292;
-}
+
 
 .form-wrap {
     margin: auto;
@@ -77,9 +90,21 @@ p {
     border: 1px solid grey;
 }
 
+#add-coffee-search:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
 #add-roast-selection {
     border-radius: .3em;
     border: 1px solid grey;
+}
+
+#add-roast-selection:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 
 #add-submit {
@@ -88,6 +113,8 @@ p {
     border-radius: .3em;
     border: none;
     margin-top: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 

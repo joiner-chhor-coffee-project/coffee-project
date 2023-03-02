@@ -82,8 +82,9 @@ function addCoffee(e) {
     };
     var addArray = [];
     coffees.push(addedCoffee);
-    localStorage.setItem("myCoffee", addedCoffee);
-
+    localStorage.setItem("myCoffee", addCoffeeRoast);
+    var myCoffee = localStorage.getItem("myCoffee");
+    document.querySelector("#add-roast-selection").value
 
     tbody.innerHTML = renderCoffees(coffees);
 }
