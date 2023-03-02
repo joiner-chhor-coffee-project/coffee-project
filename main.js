@@ -13,11 +13,11 @@ function renderCoffee(coffee) { // this function pulls from the array and wraps 
 //
 //
 function renderCoffees(coffees) { // this function loops html through nesting it in a parent div with a column and a conditional making 3 coffees group up inside the div.
-    var html = '<div class="col-lg-6 col-md-6 col-sm-6"><!-- start of loop-->'; // start of loop
+    var html = '<div class="col-lg-4 col-sm-12"><!-- start of loop-->'; // start of loop
     for(var i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
         if (i % 3 == 2) {
-            html += "</div><div class='col-lg-6 col-md-6 col-sm-6'>";
+            html += "</div><div class='col-lg-4 col-sm-12'>";
         }
          //html += renderCoffees (coffees[i]);
 
