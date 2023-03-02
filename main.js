@@ -78,7 +78,7 @@ function addCoffee(e) {
     var addedCoffee = {
         id: coffees.length + 1,
         name: addCoffeeName,
-        roast: addCoffeeRoast
+        roast: addCoffeeRoast,
     };
     var addArray = [];
     coffees.push(addedCoffee);
@@ -95,34 +95,37 @@ function addCoffee(e) {
 
 
 
+//
+// var data = localStorage.getItem("data");
+// var myCoffeeAdd = data ? JSON.parse(data) : [];
+//
+// document.querySelector('#add-submit').addEventListener('click', createCoffee);
+//
+//
+//
+// function createCoffee() {
+//
+//     let name = document.querySelector('#coffee').value;
+//     let coffeeName = new addCoffee(name.value);
+//     myCoffeeAdd.push(coffeeName);
+//     localStorage.setItem('data', JSON.stringify(myCoffeeAdd));
+// }
 
-var data = localStorage.getItem("data");
-var myCoffeeAdd = data ? JSON.parse(data) : [];
 
-document.querySelector('#add-submit').addEventListener('click', createCoffee);
 
-function createCoffee() {
-    let name = document.querySelector('#coffee').value;
-    let coffeeName = { name: name };
-    myCoffeeAdd.push(coffeeName);
-    localStorage.setItem('data', JSON.stringify(myCoffeeAdd));
+
+
+
+
+
+function mySave() {
+    var addCoffeeName = document.querySelector('#add-coffee-search').value;
+    localStorage.setItem("myContent", addCoffeeName);
 }
-
-
-
-
-
-
-
-
-// function mySave() {
-//     var addCoffeeName = document.querySelector('#add-coffee-search').value;
-//     localStorage.setItem("myContent", addCoffeeName);
-// }
-// function myLoad() {
-//     var myContent = localStorage.getItem("myContent");
-//     document.querySelector('#add-coffee-search').value = myContent;
-// }
+function myLoad() {
+    var myContent = localStorage.getItem("myContent");
+    document.querySelector('#add-coffee-search').value = myContent;
+}
 
 
 
