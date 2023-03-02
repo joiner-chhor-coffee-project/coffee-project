@@ -12,5 +12,22 @@ h1 {
     text-align: center;
 }
 
+#submit {
+    color: white;
+    background-color: #41a4ff;
+    border-radius: .3em;
+    border: none;
+    margin-top: .5em;
+}
 
+#coffee-search {
+    border-radius: .3em;
+    border: 1px solid grey;
+}
+
+#roast-selection {
+    border-radius: .3em;
+    border: 1px solid grey;
+
+}
 

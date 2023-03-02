@@ -56,6 +56,7 @@ function coffeeName(e) {
     var selectedName = coffeeSearch.value.toLowerCase();
     var filteredCoffeesName = [];
     //
+
     coffees.forEach(function (coffee) {
         if (coffee.name.toLowerCase().includes(selectedName)) {
             filteredCoffeesName.push(coffee);
@@ -86,9 +87,6 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-
-
-
 var coffeeSearch = document.querySelector('#coffee-search');
 
 
