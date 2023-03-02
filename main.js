@@ -89,6 +89,14 @@ function addCoffee(e) {
 }
 
 
+function mySave() {
+    var addCoffeeName = document.querySelector('#add-coffee-search').value;
+    localStorage.setItem("myContent", addCoffeeName);
+}
+function myLoad() {
+    var myContent = localStorage.getItem("myContent");
+    document.querySelector('#add-coffee-search').value = myContent;
+}
 
 
 
@@ -138,7 +146,13 @@ roastSelection.addEventListener('change', updateCoffees);
 submitButton.addEventListener('click', addCoffee);
 
 
+submitButton.addEventListener('click', mySave);
 
+
+
+window.addEventListener('load', function() {
+    myLoad();
+});
 
 // submitButton.addEventListener('click', function(e) {
 //     updateCoffees(e);
