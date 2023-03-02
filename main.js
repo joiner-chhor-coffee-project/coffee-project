@@ -90,14 +90,39 @@ function addCoffee(e) {
 }
 
 
-function mySave() {
-    var addCoffeeName = document.querySelector('#add-coffee-search').value;
-    localStorage.setItem("myContent", addCoffeeName);
+
+
+
+
+
+
+var data = localStorage.getItem("data");
+var myCoffeeAdd = data ? JSON.parse(data) : [];
+
+document.querySelector('#add-submit').addEventListener('click', createCoffee);
+
+function createCoffee() {
+    let name = document.querySelector('#coffee').value;
+    let coffeeName = { name: name };
+    myCoffeeAdd.push(coffeeName);
+    localStorage.setItem('data', JSON.stringify(myCoffeeAdd));
 }
-function myLoad() {
-    var myContent = localStorage.getItem("myContent");
-    document.querySelector('#add-coffee-search').value = myContent;
-}
+
+
+
+
+
+
+
+
+// function mySave() {
+//     var addCoffeeName = document.querySelector('#add-coffee-search').value;
+//     localStorage.setItem("myContent", addCoffeeName);
+// }
+// function myLoad() {
+//     var myContent = localStorage.getItem("myContent");
+//     document.querySelector('#add-coffee-search').value = myContent;
+// }
 
 
 
