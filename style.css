@@ -11,9 +11,9 @@
     height: 150px;
     width: 200px;
 }
-.container {
-    background-color: #8ca9be;
-}
+/*.container {*/
+/*    background-color: #8ca9be;*/
+/*}*/
 .navbar {
     background: rgba(30, 33, 36);
     border-bottom: white solid 3px;
@@ -129,4 +129,11 @@ label {
     padding-bottom: .2em;
 }
 
+.footer-hr {
+    border-top: 9px dotted #fff;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 
