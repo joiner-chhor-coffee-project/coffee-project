@@ -71,9 +71,29 @@ function coffeeName(e) { // function for searching for a coffee
     // adds the coffee to the table that was chosen.
     tbody.innerHTML = renderCoffees(filteredCoffeesName);
 }
-
-
 //
+//
+//below is function to add new coffee
+
+function addCoffee(e) {
+    e.preventDefault();
+    var addCoffeeName = document.querySelector('#add-coffee-search').value;
+    var addCoffeeRoast = document.querySelector('#add-roast-selection').value;
+    var addedCoffee = {
+
+        name: addCoffeeName,
+        roast: addCoffeeRoast
+    };
+    coffees.push(addedCoffee);
+        tbody.innerHTML = renderCoffees(coffees);
+}
+
+
+
+
+
+
+//above is function to add new coffee
 //
 //
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -97,14 +117,24 @@ var coffees = [
 //
 //
 var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
+var submitButton = document.querySelector('#add-submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSearch = document.querySelector('#coffee-search');
+
+var addName = document.querySelector('#add-coffee-search');
+var addRoast = document.querySelector('#add-roast-selection');
+
+
 
 tbody.innerHTML = renderCoffees(coffees);
 
 coffeeSearch.addEventListener('keyup', coffeeName); // keydown makes it delay the change this is more abrupt.
 roastSelection.addEventListener('change', updateCoffees);
+
+ //addName.addEventListener('keyup', addCoffee);
+// addRoast.addEventListener('click', addCoffee);
+submitButton.addEventListener('click', addCoffee);
+
 
 
 
