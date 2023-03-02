@@ -14,7 +14,7 @@ h1 {
 }
 .form-container {
     margin-left: 20px;
-    border: green 5px solid;
+    /*border: green 5px solid;*/
 }
 label {
     font-weight: bold;
@@ -40,18 +40,26 @@ label {
 }
 
 .coffee {
-    border: red 5px solid;
+    /*border: red 5px solid;*/
     width: 200px;
     height: 100px;
-    margin: 5px;
+    white-space: nowrap;
 
 }
+
+#coffees {
+    flex-wrap: wrap;
+    height: 500px;
+    overflow: auto;
+}
+
 .coffee p {
-    padding: 10px;
+    text-align: center;
 }
 
-h3  {
+.coffee h3  {
     display: inline;
+    text-align: left;
 }
 p {
     display: inline;

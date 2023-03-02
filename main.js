@@ -76,13 +76,19 @@ function addCoffee(e) {
     var addCoffeeName = document.querySelector('#add-coffee-search').value;
     var addCoffeeRoast = document.querySelector('#add-roast-selection').value;
     var addedCoffee = {
-
+        id: coffees.length + 1,
         name: addCoffeeName,
         roast: addCoffeeRoast
     };
+    var addArray = [];
     coffees.push(addedCoffee);
-        tbody.innerHTML = renderCoffees(coffees);
+    localStorage.setItem("myCoffee", addedCoffee);
+
+
+    tbody.innerHTML = renderCoffees(coffees);
 }
+
+
 
 
 
