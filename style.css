@@ -43,10 +43,11 @@ label {
     border: red 5px solid;
     width: 200px;
     height: 100px;
+    margin: 5px;
 
 }
 .coffee p {
-    /*padding: 10px;*/
+    padding: 10px;
 }
 
 h3  {
@@ -56,6 +57,11 @@ p {
     display: inline;
     margin-left: .5em;
     color: #939292;
+}
+
+.form-wrap {
+    margin: auto;
+    margin-right: 0px;
 }
 
 
