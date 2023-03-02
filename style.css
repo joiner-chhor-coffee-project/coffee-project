@@ -7,13 +7,21 @@
 /*    border: 1px solid black;*/
 /*    padding: 5px 10px;*/
 /*}*/
-
+.logo {
+    height: 150px;
+    width: 200px;
+}
 .container {
     background-color: #8ca9be;
 }
-h1 {
-    text-align: center;
+.navbar {
+    background: rgba(30, 33, 36);
+    border-bottom: white solid 3px;
 }
+.nav-font {
+    color: white;
+}
+
 .form-container {
     margin-left: 20px;
     /*border: green 5px solid;*/
