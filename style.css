@@ -29,6 +29,18 @@ header {
     color: red;
 }
 
+.bad-coffee:hover {
+    color: red;
+    text-transform: uppercase;
+    background-color: #000;
+    border: .5px #004aff;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 0 30px 0 #2eb2ff,
+    0 0 30px 0 #2eb2ff,
+    0 0 10px 0 #2eb2ff inset;
+}
+
 #jumbotron img{
     width: 400px;
     height: 250px;
