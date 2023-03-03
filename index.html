@@ -16,8 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <h2 class="logo-init">BC</h2>
-                <a class="navbar-brand d-none d-lg-block text-white ms-3 nav-font" href="img/newww-coffee.png"target="_blank">Bad Coffee</a>
+                <a class="logo-init" href="img/newww-coffee.png">BC</a>
+                <a class="navbar-brand d-none d-lg-block text-white ms-3 nav-font" href="img/newww-coffee.png"
+                   target="_blank">Bad Coffee</a>
                 <button class="navbar-toggler me-3 bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +30,13 @@
                             <a class="nav-link text-white nav-font" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white nav-font" href="#">About</a>
+                            <a class="nav-link text-white nav-font" href="#about-hr">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white nav-font" href="#">Roasts</a>
+                            <a class="nav-link text-white nav-font" href="#roast-hr">Roast Survey</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white nav-font" href="#">Contact</a>
+                            <a class="nav-link text-white nav-font" href="#footer-hr">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -45,9 +46,9 @@
     <section class="main-body">
         <div class="container">
 
-                <div class="jumbotron">
-                    <img src="img/newww-coffee.png">
-                </div>
+            <div id="jumbotron">
+                <img src="img/newww-coffee.png">
+            </div>
 
 
             <br>
@@ -86,11 +87,80 @@
                     </form>
                 </div>
             </div>
+
+
+            <hr id="about-hr">
+            <br>
+
+            <div>
+                <div>
+                    <h2 id="about-header">About</h2>
+                </div>
+                <div>
+                    <p class="about-content">
+                        Malum capulus tam malum est quod tam atrox, Sed ego coniecturam eius meliorem quam nullum omnino
+                        capulus. Sed capulus vere malum est, nisi nullum habeo capulus i coniecto bonum esse.
+                    </p>
+                </div>
+                <div class="row">
+                    <img class="col-md-6" src="https://placeholder.pics/svg/400x400">
+                    <img class="col-md-6" src="https://placeholder.pics/svg/400x400">
+                </div>
+            </div>
+
+            <!--Roast tab starts here-->
+            <hr id="roast-hr">
+            <br>
+
+            <div>
+                <h2 id="roast-header">Roast Survey</h2>
+            </div>
+
+            <div>
+
+                <div>
+                    <p>Pick Your Favorite Roast!</p>
+                    <form>
+
+                        <div class="roast-s-wrap">
+                            <label>
+                                <input class="roast-dom" type="radio" name="roast-dom-1" value="light">Light
+                            </label>
+
+                            <label>
+                                <input class="roast-dom" type="radio" name="roast-dom-1" value="medium">Medium
+                            </label>
+
+                            <label>
+                                <input class="roast-dom" type="radio" name="roast-dom-1" value="dark">Dark
+                            </label>
+                            <input id="survey-submit" type="submit">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 roast-img-wrap">
+                        <img src="https://placeholder.pics/svg/400x400">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="roast-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Non curabitur gravida arcu ac tortor dignissim convallis
+                            aenean et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Non curabitur gravida arcu ac tortor dignissim
+                            convallis aenean et.</p>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
     </section>
+
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr class="footer-hr">
+<br><br><br><br><br><br><br><br><br><br>
+<hr id="footer-hr">
 </section>
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">

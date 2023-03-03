@@ -3,7 +3,7 @@
 function renderCoffee(coffee) { // this function pulls from the array and wraps it in a div and assign name the header element and roast the p element
     var html = '<div class="coffee">';
     // html += '<td>' + coffee.id + '</td>';
-    html += '<h3>' + coffee.name + '</h3>';
+    html += '<a class="coffee-link" href="#"><h3>' + coffee.name + '</h3></a>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
