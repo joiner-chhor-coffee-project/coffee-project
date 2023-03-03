@@ -1,33 +1,46 @@
-/*table {*/
-/*    border-collapse: collapse;*/
-/*    margin: 15px 0;*/
-/*}*/
 
-/*td, th {*/
-/*    border: 1px solid black;*/
-/*    padding: 5px 10px;*/
-/*}*/
-.logo {
-    height: 150px;
-    width: 200px;
+.logo-init {
+    color: white;
+/*    need to find a good style font for this */
+
 }
-/*.container {*/
-/*    background-color: #8ca9be;*/
-/*}*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
 .navbar {
     background: rgba(30, 33, 36);
     border-bottom: white solid 3px;
+
 }
 .nav-font {
     color: white;
 }
+.jumbotron img{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    top: 25px;
 
+}
+.jumbotron {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
 .form-container {
     margin-left: 20px;
-    /*border: green 5px solid;*/
 }
 label {
     font-weight: bold;
+    color: white;
 
 }
 #submit {
