@@ -73,65 +73,26 @@ function coffeeName(e) { // function for searching for a coffee
 
 function addCoffee(e) {
     e.preventDefault();
-    var addCoffeeName = addCoffeeSearch.value
-    var addCoffeeRoast = document.querySelector('#add-roast-selection').value;
+    var addCoffeeName = addCoffeeSearch.value;// input field put into a var
+    var addCoffeeRoast = addRoastSelection.value;// select option value put into a var
     var addedCoffee = {
         id: coffees.length + 1,
         name: addCoffeeName,
         roast: addCoffeeRoast,
     };
-
     coffees.push(addedCoffee);
-    localStorage.setItem('coffeesUpdated', JSON.stringify(coffees))
-
-    var myCoffee = localStorage.getItem("myCoffee");
-    document.querySelector("#add-roast-selection").value
-
+    localStorage.setItem('loadCoffees', JSON.stringify(coffees));
     tbody.innerHTML = renderCoffees(coffees);
+    addCoffeeSearch.value = '';// clears the search box when refreshing page.
 }
 
-
-
-
-
-
-
-//
-// var data = localStorage.getItem("data");
-// var myCoffeeAdd = data ? JSON.parse(data) : [];
-//
-// document.querySelector('#add-submit').addEventListener('click', createCoffee);
-//
-//
-//
-// function createCoffee() {
-//
-//     let name = document.querySelector('#coffee').value;
-//     let coffeeName = new addCoffee(name.value);
-//     myCoffeeAdd.push(coffeeName);
-//     localStorage.setItem('data', JSON.stringify(myCoffeeAdd));
-// }
-
-
-
-
-
-
-
-
-function mySave() {
-    var addCoffeeName = document.querySelector('#add-coffee-search').value;
-    // localStorage.setItem("myContent", addCoffeeName);
-}
 function myLoad() {
-    var updatedCoffees = localStorage.getItem("coffeesUpdated");
-    renderCoffees(updatedCoffees)
-    // let newCoffee = localStorage.getItem(updatedCoffees);
-    updatedCoffees.push(coffees);
-
+    var loadedCoffees = localStorage.getItem('loadCoffees');
+    if (loadedCoffees) {  // If 'loadedCoffees' is truthy
+        coffees = JSON.parse(loadedCoffees);  // Puts the array back together from stringify
+        tbody.innerHTML = renderCoffees(coffees);
+    }
 }
-
-
 
 
 
@@ -178,9 +139,6 @@ roastSelection.addEventListener('change', updateCoffees);
  //addName.addEventListener('keyup', addCoffee);
 // addRoast.addEventListener('click', addCoffee);
 submitButton.addEventListener('click', addCoffee);
-
-
-submitButton.addEventListener('click', mySave);
 
 
 
