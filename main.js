@@ -180,7 +180,8 @@ window.addEventListener('load', function() {
     function roastSurveySwitch(e) {
         e.preventDefault();
         var roastSurvey = document.querySelector('.roast-dom:checked');
-        var placeholderNames = document.getElementsByClassName("roast-content");
+        var placeholderNames = document.getElementsByClassName("swap-img");
+
         var surveyRoast = roastSurvey.value;
         console.log(roastSurvey);
         console.log(surveyRoast + "inside function");
@@ -188,15 +189,15 @@ window.addEventListener('load', function() {
             switch (surveyRoast) {
                 case 'light' :
                     console.log(surveyRoast + "inside light");
-                    placeholderNames[i].style.color = "purple";
+                    placeholderNames[i].src = "/img/light-roast.png";
                     break;
                 case 'medium' :
                     console.log(surveyRoast + "inside medium");
-                    placeholderNames[i].style.color = "green";
+                    placeholderNames[i].src = "./img/medium-roast.jpeg";
                     break;
                 case 'dark' :
                     console.log(surveyRoast + "inside dark");
-                    placeholderNames[i].style.color = "blue";
+                    placeholderNames[i].src = "../img/dark-roast.png";
                     break;
 
             }
