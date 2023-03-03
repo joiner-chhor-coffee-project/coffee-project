@@ -126,8 +126,10 @@ function mySave() {
 }
 function myLoad() {
     var updatedCoffees = localStorage.getItem("coffeesUpdated");
-    renderCoffees(myContent)
-    // document.querySelector('#add-coffee-search').value = myContent;
+    renderCoffees(updatedCoffees)
+    // let newCoffee = localStorage.getItem(updatedCoffees);
+    updatedCoffees.push(coffees);
+
 }
 
 

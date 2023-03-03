@@ -38,6 +38,11 @@ h1 {
     color: white;
     text-align: center;
 }
+
+h2 {
+    color: white;
+}
+
 .form-container {
     margin-left: 20px;
 }
@@ -200,4 +205,16 @@ label {
 .coffee-link {
     text-decoration: none;
     color: black;
+}
+
+.about-img-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+
+li {
+    display: inline;
+    height: auto;
+    max-width: 100%;
 }
