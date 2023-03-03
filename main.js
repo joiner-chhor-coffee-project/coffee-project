@@ -82,7 +82,9 @@ function addCoffee(e) {
     };
     var addArray = [];
     coffees.push(addedCoffee);
-    localStorage.setItem("myCoffee", addCoffeeRoast);
+    console.log(coffees);
+    localStorage.setItem('coffeesUpdated', JSON.stringify(coffees))
+
     var myCoffee = localStorage.getItem("myCoffee");
     document.querySelector("#add-roast-selection").value
 
@@ -120,11 +122,12 @@ function addCoffee(e) {
 
 function mySave() {
     var addCoffeeName = document.querySelector('#add-coffee-search').value;
-    localStorage.setItem("myContent", addCoffeeName);
+    // localStorage.setItem("myContent", addCoffeeName);
 }
 function myLoad() {
-    var myContent = localStorage.getItem("myContent");
-    document.querySelector('#add-coffee-search').value = myContent;
+    var updatedCoffees = localStorage.getItem("coffeesUpdated");
+    renderCoffees(myContent)
+    // document.querySelector('#add-coffee-search').value = myContent;
 }
 
 
