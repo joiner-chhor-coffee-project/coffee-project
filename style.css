@@ -21,8 +21,8 @@ header {
     color: white;
     font-style: normal;
     text-decoration: none;
-    padding-left: .2em;
-    padding-right: .2em;
+    margin-right: .5em;
+    margin-left: .5em;
 }
 
 .nav-font:hover {
