@@ -73,16 +73,15 @@ function coffeeName(e) { // function for searching for a coffee
 
 function addCoffee(e) {
     e.preventDefault();
-    var addCoffeeName = document.querySelector('#add-coffee-search').value;
+    var addCoffeeName = addCoffeeSearch.value
     var addCoffeeRoast = document.querySelector('#add-roast-selection').value;
     var addedCoffee = {
         id: coffees.length + 1,
         name: addCoffeeName,
         roast: addCoffeeRoast,
     };
-    var addArray = [];
+
     coffees.push(addedCoffee);
-    console.log(coffees);
     localStorage.setItem('coffeesUpdated', JSON.stringify(coffees))
 
     var myCoffee = localStorage.getItem("myCoffee");
@@ -164,7 +163,8 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#add-submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSearch = document.querySelector('#coffee-search');
-
+var addCoffeeSearch = document.querySelector("#add-coffee-search");
+var addRoastSelection = document.querySelector("#add-roast-selection");
 var addName = document.querySelector('#add-coffee-search');
 var addRoast = document.querySelector('#add-roast-selection');
 
