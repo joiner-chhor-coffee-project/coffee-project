@@ -282,4 +282,7 @@ li {
 .swap-img {
     height: 400px;
     width: 400px;
+    border-radius: 30%;
+    border: white 5px solid;
+    object-fit: cover;
 }
