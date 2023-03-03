@@ -1,5 +1,11 @@
 
-.logo-init {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lobster&display=swap');
+
+
+
+
+
+  .logo-init {
     color: white;
 /*    need to find a good style font for this */
     text-decoration: none;
@@ -285,4 +291,40 @@ li {
     border-radius: 30%;
     border: white 5px solid;
     object-fit: cover;
+}
+
+.google-font {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.roast-p {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.google-title-h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+}
+.google-title-h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+.google-title-h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+/*.fa-regular {*/
+/*    color: white;*/
+/*    */
+/*}*/
+
+
+
+@media screen and (min-width: 992px) {
+    .logo-init {
+        display: none;
+    }
 }
