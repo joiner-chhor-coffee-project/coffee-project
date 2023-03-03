@@ -228,6 +228,8 @@ label {
     margin-left: 10px;
 }
 #survey-submit {
+    height: 30px;
+    width: 100px;
     color: white;
     background-color: #41a4ff;
     border-radius: .3em;
@@ -236,6 +238,11 @@ label {
     padding-top: .2em;
     padding-bottom: .2em;
     margin-bottom: 5em;
+}
+
+#survey-submit:hover {
+    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    color: #343434;
 }
 
 
@@ -327,4 +334,28 @@ li {
     .logo-init {
         display: none;
     }
+    .bad-coffee2 {
+        display: none;
+    }
 }
+
+@media screen and (max-width: 992px) {
+    .bad-coffee2 {
+        margin-left: .2em;
+        text-decoration: none;
+    }
+}
+
+.bad-coffee2:hover {
+    color: red;
+    text-transform: uppercase;
+    background-color: #000;
+    border: .5px #004aff;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 0 30px 0 #2eb2ff,
+    0 0 30px 0 #2eb2ff,
+    0 0 10px 0 #2eb2ff inset;
+}
+
+
