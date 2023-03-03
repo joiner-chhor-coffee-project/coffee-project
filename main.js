@@ -30,8 +30,8 @@ function updateCoffees(e) { // function for roast drop down.
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     if (selectedRoast === 'All') { // displays all roast types
-        filteredCoffees = coffees;
-        tbody.innerHTML = renderCoffees(coffees); // this fixes the all option making it where the var 'tbody.innerHTML' calls on '#coffee' and makes it equal its original value to bring back the whole list.
+        filteredCoffees = coffees.reverse();
+        tbody.innerHTML = renderCoffees(coffees.reverse()); // this fixes the all option making it where the var 'tbody.innerHTML' calls on '#coffee' and makes it equal its original value to bring back the whole list.
     } else {
         coffees.forEach(function (coffee) {
             if (coffee.roast === selectedRoast) {
@@ -80,7 +80,7 @@ function addCoffee(e) {
         name: addCoffeeName,
         roast: addCoffeeRoast,
     };
-    coffees.push(addedCoffee);
+    coffees.unshift(addedCoffee);
     localStorage.setItem('loadCoffees', JSON.stringify(coffees));
     tbody.innerHTML = renderCoffees(coffees);
     addCoffeeSearch.value = '';// clears the search box when refreshing page.
@@ -117,6 +117,7 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+console.log(coffees.reverse());
 //
 //
 //
