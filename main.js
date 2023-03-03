@@ -144,11 +144,65 @@ submitButton.addEventListener('click', addCoffee);
 
 window.addEventListener('load', function() {
     myLoad();
+
+//
+//
+//
+//
+//
+
+    document.getElementById('btn-1').addEventListener('click', changeText);
+    function changeText() {
+        let swapText = document.getElementsByClassName("about-content")[0];
+        if (swapText.lightSwitch === true) {
+            swapText.lightSwitch = false;
+            swapText.innerHTML = "Bad coffee is so bad that it's so terrible, but I guess its better than no coffee at all. But the coffee is really bad, unless I don't have any coffee I guess it's good.";
+        } else {
+            swapText.lightSwitch = true;
+            swapText.innerHTML = "Malum capulus tam malum est quod tam atrox, Sed ego coniecturam eius meliorem quam nullum omnino capulus. Sed capulus vere malum est, nisi nullum habeo capulus i coniecto bonum esse.";
+        }
+    }
+
+
+
+
+    var roastSurveyButton = document.querySelector('#survey-submit');
+    roastSurveyButton.addEventListener('click', roastSurveySwitch);
+
+
+
+
+
+
+
+
+    function roastSurveySwitch(e) {
+        e.preventDefault();
+        var roastSurvey = document.querySelector('.roast-dom:checked');
+        var placeholderNames = document.getElementsByClassName("roast-content");
+        var surveyRoast = roastSurvey.value;
+        console.log(roastSurvey);
+        console.log(surveyRoast + "inside function");
+        for (var i = 0; i < placeholderNames.length; i++) {
+            switch (surveyRoast) {
+                case 'light' :
+                    console.log(surveyRoast + "inside light");
+                    placeholderNames[i].style.color = "purple";
+                    break;
+                case 'medium' :
+                    console.log(surveyRoast + "inside medium");
+                    placeholderNames[i].style.color = "green";
+                    break;
+                case 'dark' :
+                    console.log(surveyRoast + "inside dark");
+                    placeholderNames[i].style.color = "blue";
+                    break;
+
+            }
+        }
+    }
 });
 
-// submitButton.addEventListener('click', function(e) {
-//     updateCoffees(e);
-//     coffeeName(e);
-// });
+
 
 
