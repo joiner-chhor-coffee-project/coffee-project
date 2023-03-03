@@ -59,6 +59,12 @@ label {
     padding-top: .2em;
     padding-bottom: .2em;
 }
+
+#submit:hover {
+    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    color: #343434;
+}
+
 #coffee-search {
     border-radius: .3em;
     border: 1px solid grey;
@@ -88,8 +94,10 @@ label {
     flex-wrap: wrap;
     height: 500px;
     overflow: auto;
-    background: #b7b786;
+    background: linear-gradient(to bottom, #1230ff, rgba(59, 127, 255, 0.68), rgba(99, 164, 255, 0.83));
+
 }
+
 .coffee p {
     text-align: center;
     display: inline;
@@ -100,6 +108,9 @@ label {
     display: inline;
     text-align: left;
 }
+
+
+
 .form-wrap {
     margin: auto;
     margin-right: 0px;
@@ -131,6 +142,12 @@ label {
     padding-top: .2em;
     padding-bottom: .2em;
 }
+
+#add-submit:hover {
+    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    color: #343434;
+}
+
 /*about content below*/
 #about-hr {
     color: white;
@@ -205,6 +222,7 @@ label {
 .coffee-link {
     text-decoration: none;
     color: black;
+    transition: .5s ease-in-out;
 }
 
 .about-img-container {
@@ -217,4 +235,19 @@ li {
     display: inline;
     height: auto;
     max-width: 100%;
+}
+
+.coffee-link:hover {
+    color: #ff8000;
+}
+
+.about-img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+    transition: .2s ease;
 }
