@@ -2,13 +2,13 @@
 
 function renderCoffee(coffee) { // this function pulls from the array and wraps it in a div and assign name the header element and roast the p element
     var html = '<div class="coffee">';
-    // html += '<td>' + coffee.id + '</td>';
     html += '<a class="coffee-link" id="coffee-' + coffee.id + '" href="#"><h3>' + coffee.name + '</h3></a>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
 }
+
 //
 //
 //
@@ -20,6 +20,7 @@ function renderCoffees(coffees) {
     }
     return html;
 }
+
 //
 //
 //
@@ -42,6 +43,7 @@ function updateCoffees(e) { // function for roast drop down.
         tbody.innerHTML = renderCoffees(filteredCoffees);
     }
 }
+
 //
 //
 //
@@ -66,6 +68,7 @@ function coffeeName() { // function for searching for a coffee
     // adds the coffee to the table that was chosen.
     tbody.innerHTML = renderCoffees(filteredCoffeesName);
 }
+
 //
 //
 //below is function to add new coffee
@@ -90,6 +93,7 @@ function addCoffee(e) {
         alert('Sorry this has to be more than three character long to be valid.')
     }
 }
+
 function myLoad() {
     var loadedCoffees = localStorage.getItem('loadCoffees');
     if (loadedCoffees) {  // If 'loadedCoffees' is truthy
@@ -97,6 +101,7 @@ function myLoad() {
         tbody.innerHTML = renderCoffees(coffees);
     }
 }
+
 //
 //
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -221,6 +226,7 @@ window.addEventListener('load', function () {
             swapText.innerHTML = "Malum capulus tam malum est quod tam atrox, Sed ego coniecturam eius meliorem quam nullum omnino capulus. Sed capulus vere malum est, nisi nullum habeo capulus i coniecto bonum esse.";
         }
     }
+
     //
     //
     //
@@ -241,7 +247,7 @@ window.addEventListener('load', function () {
             switch (surveyRoast) {
                 case 'light' :
                     console.log(surveyRoast + "inside light");
-                    placeholderNames[i].src = "/img/light-roast.png";
+                    placeholderNames[i].src = "./img/light-roast.png";
                     break;
                 case 'medium' :
                     console.log(surveyRoast + "inside medium");
@@ -249,12 +255,13 @@ window.addEventListener('load', function () {
                     break;
                 case 'dark' :
                     console.log(surveyRoast + "inside dark");
-                    placeholderNames[i].src = "../img/dark-roast.png";
+                    placeholderNames[i].src = "./img/dark-roast.png";
                     break;
 
             }
         }
     }
+
     //
     //
     //
@@ -298,7 +305,6 @@ window.addEventListener('load', function () {
     var htmlAdd = document.getElementById('coffees');
 
 
-
     var backButton = document.querySelector('.back-button');
     backButton.addEventListener('click', refreshPage);
 
@@ -330,32 +336,31 @@ window.addEventListener('load', function () {
                 htmlAdd.innerHTML += "<h2 class='classAddTitle'>" + coffees[i].name + "</h2>";
                 htmlAdd.innerHTML += "<p class='classAddDesc'>" + coffees[i].description + "</p>";
             }
+        }
+        for (var d = 0; d < divChange.length; d++) {
+            divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
-    for (var d = 0; d < divChange.length; d++) {
-        divChange[d].style.display = 'none';
-    }
-    for (var j = 0; j < divChange.length; j++) {
-        divchangeTwo[j].style.display = 'none';
-        backButton.classList.remove('d-none');
-    }
-}
 
-function cinnamonDesc() {
+    function cinnamonDesc() {
         for (var i = 0; i < coffees.length; i++) {
             if (coffees[i].id === 3) {
                 htmlAdd.innerHTML += "<h2 class='classAddTitle'>" + coffees[i].name + "</h2>";
                 htmlAdd.innerHTML += "<p class='classAddDesc'>" + coffees[i].description + "</p>";
             }
         }
-    for (var d = 0; d < divChange.length; d++) {
-        divChange[d].style.display = 'none';
+        for (var d = 0; d < divChange.length; d++) {
+            divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
-    for (var j = 0; j < divChange.length; j++) {
-        divchangeTwo[j].style.display = 'none';
-        backButton.classList.remove('d-none');
-    }
-}
-
 
 
     function cityDesc() {
