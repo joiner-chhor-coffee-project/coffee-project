@@ -49,11 +49,6 @@
                 </div>
 
             </div>
-            <!--            <div>-->
-            <!--                    <span>-->
-            <!--                        <i class="fa-regular fa-circle-user"></i>-->
-            <!--                    </span>-->
-            <!--            </div>-->
         </nav>
     </header>
     <section class="main-body">
@@ -73,32 +68,44 @@
                     <div class="row-cols-xl-3 row-cols-md-2 row-cols-sm-12 d-flex" id="coffees"></div>
                 </div>
                 <div class="form-wrap col-5">
-                    <form class="row">
-                        <label class="google-font" for="roast-selection">Roast</label>
-                        <select id="roast-selection">
-                            <option>All</option>
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <label class="google-font" for="coffee-search">Coffee Name</label>
-                        <input id="coffee-search" type="search" placeholder="Coffee Name Here"/>
-                        <input id="submit" type="submit"/>
-                    </form>
-                    <br>
-                    <h2 class="text-center google-title-h3">Add a Coffee</h2> <!--  add class here for font-->
-                    <form class="row">
-                        <label class="google-font" for="add-roast-selection">Roast</label>
-                        <select id="add-roast-selection">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <label class="google-font" for="add-coffee-search">Coffee Name</label>
-                        <input id="add-coffee-search" type="search" placeholder="Coffee Name Here"/>
-                        <input id="add-submit" type="submit"/>
-                    </form>
+
+                    <input class='back-button d-none' type='submit' value='Go Back'>
+
+                    <div class="js-target">
+
+
+                        <form class="row">
+                            <label class="google-font" for="roast-selection">Roast</label>
+                            <select id="roast-selection">
+                                <option>All</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <label class="google-font" for="coffee-search">Coffee Name</label>
+                            <input id="coffee-search" type="search" placeholder="Coffee Name Here"/>
+                            <input id="submit" type="submit"/>
+                        </form>
+                        <br>
+                        <h2 class="text-center google-title-h3">Add a Coffee</h2> <!--  add class here for font-->
+                        <form class="row">
+                            <label class="google-font" for="add-roast-selection">Roast</label>
+                            <select id="add-roast-selection">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <label class="google-font" for="add-coffee-search">Coffee Name</label>
+                            <input id="add-coffee-search" type="search" placeholder="Coffee Name Here"/>
+                            <input id="add-submit" type="submit"/>
+                        </form>
+                    </div>
                 </div>
+            </div>
+
+
+            <div>
+                <p id="coffee-description"></p>
             </div>
 
 
@@ -274,4 +281,5 @@
 
 </body>
 </html>
+
 

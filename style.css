@@ -1,13 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lobster&display=swap');
 
 
 
 
 
-  .logo-init {
+.logo-init {
     color: white;
-/*    need to find a good style font for this */
     text-decoration: none;
     font-size: xx-large;
 }
@@ -323,10 +321,32 @@ li {
     font-size: 30px;
 }
 
-/*.fa-regular {*/
-/*    color: white;*/
-/*    */
-/*}*/
+/*add this*/
+.classAddTitle {
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-size: xxx-large;
+
+}
+.classAddDesc {
+    position: relative;
+    bottom: 150px;
+    width: 100%;
+    text-indent: 10%;
+}
+.back-button {
+    position: relative;
+    bottom: 235px;
+}
+
+/**/
+/**/
+/**/
+/**/
+
+
+
 
 
 
@@ -357,5 +377,4 @@ li {
     0 0 30px 0 #2eb2ff,
     0 0 10px 0 #2eb2ff inset;
 }
-
 
