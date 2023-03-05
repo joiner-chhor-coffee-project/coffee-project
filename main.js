@@ -105,87 +105,88 @@ var coffees = [
         id: 1,
         name: 'Light City',
         roast: 'light',
-        description: 'LightCity coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'LightCity coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 2,
         name: 'Half City',
         roast: 'light',
-        description: 'Half City coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Half City coffee is a light roast blend of elegant flavors consisting of bold and cidar fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 3,
         name: 'Cinnamon',
         roast: 'light',
-        description: 'Cinnamon coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Cinnamon coffee is a light roast blend of elegant flavors consisting of bold and cinnamon fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 4,
         name: 'City',
         roast: 'medium',
-        description: 'City coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'City coffee is a medium roast blend of elegant flavors consisting of bold and hickory fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 5,
         name: 'American',
         roast: 'medium',
-        description: 'American coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'American coffee is a medium roast blend of elegant flavors consisting of bold and zesty fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 6,
         name: 'Breakfast',
         roast: 'medium',
-        description: 'Breakfast coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Breakfast coffee is a medium roast blend of elegant flavors consisting of bold and bright fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 7,
         name: 'High',
         roast: 'dark',
-        description: 'High coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'High coffee is a dark roast blend of elegant flavors consisting of bold and apple fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 8,
         name: 'Continental',
         roast: 'dark',
-        description: 'Continental coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Continental coffee is a dark roast blend of elegant flavors consisting of bold and honey fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 9,
         name: 'New Orleans',
         roast: 'dark',
-        description: 'New Orleans coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'New Orleans coffee is a dark roast blend of elegant flavors consisting of bold and cajun fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 10,
         name: 'European',
         roast: 'dark',
-        description: 'European coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'European coffee is a dark roast blend of elegant flavors consisting of bold and bland fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 11,
         name: 'Espresso',
         roast: 'dark',
-        description: 'Espresso coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Espresso coffee is a dark roast blend of elegant flavors consisting of bold and strong fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 12,
         name: 'Viennese',
         roast: 'dark',
-        description: 'Viennese coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Viennese coffee is a dark roast blend of elegant flavors consisting of bold and sweet fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 13,
         name: 'Italian',
         roast: 'dark',
-        description: 'Italian coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'Italian coffee is a dark roast blend of elegant flavors consisting of bold and hearty fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
     {
         id: 14,
         name: 'French',
         roast: 'dark',
-        description: 'French coffee is a light roast blend of elegant flavors consisting of bold and citrus fusion.'
+        description: 'French coffee is a dark roast blend of elegant flavors consisting of bold and romantic fusion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Eu facilisis sed odio morbi quis commodo odio aenean. Etiam dignissim diam quis enim. Proin fermentum leo vel orci porta non pulvinar neque.'
     },
 ];
+console.log(coffees.reverse());
 //
 //
 //
@@ -306,7 +307,6 @@ window.addEventListener('load', function () {
         location.reload();
     }
 
-
     function lightCityDesc() {
         for (var i = 0; i < coffees.length; i++) {
             if (coffees[i].id === 1) {
@@ -320,6 +320,7 @@ window.addEventListener('load', function () {
         for (var j = 0; j < divChange.length; j++) {
             divchangeTwo[j].style.display = 'none';
             backButton.classList.remove('d-none');
+
         }
     }
 
@@ -329,22 +330,32 @@ window.addEventListener('load', function () {
                 htmlAdd.innerHTML += "<h2 class='classAddTitle'>" + coffees[i].name + "</h2>";
                 htmlAdd.innerHTML += "<p class='classAddDesc'>" + coffees[i].description + "</p>";
             }
-        }
-        for (var d = 0; d < divChange.length; d++) {
-            divChange[d].style.display = 'none';
-        }
     }
-    function cinnamonDesc() {
+    for (var d = 0; d < divChange.length; d++) {
+        divChange[d].style.display = 'none';
+    }
+    for (var j = 0; j < divChange.length; j++) {
+        divchangeTwo[j].style.display = 'none';
+        backButton.classList.remove('d-none');
+    }
+}
+
+function cinnamonDesc() {
         for (var i = 0; i < coffees.length; i++) {
             if (coffees[i].id === 3) {
                 htmlAdd.innerHTML += "<h2 class='classAddTitle'>" + coffees[i].name + "</h2>";
                 htmlAdd.innerHTML += "<p class='classAddDesc'>" + coffees[i].description + "</p>";
             }
         }
-        for (var d = 0; d < divChange.length; d++) {
-            divChange[d].style.display = 'none';
-        }
+    for (var d = 0; d < divChange.length; d++) {
+        divChange[d].style.display = 'none';
     }
+    for (var j = 0; j < divChange.length; j++) {
+        divchangeTwo[j].style.display = 'none';
+        backButton.classList.remove('d-none');
+    }
+}
+
 
 
     function cityDesc() {
@@ -357,7 +368,12 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
+
 
     function americanDesc() {
         for (var i = 0; i < coffees.length; i++) {
@@ -368,6 +384,10 @@ window.addEventListener('load', function () {
         }
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
         }
     }
 
@@ -381,6 +401,10 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
 
     function highDesc() {
@@ -392,6 +416,10 @@ window.addEventListener('load', function () {
         }
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
         }
     }
 
@@ -405,6 +433,10 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
 
     function newOrleansDesc() {
@@ -416,6 +448,10 @@ window.addEventListener('load', function () {
         }
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
         }
     }
 
@@ -429,6 +465,10 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
 
     function espressoDesc() {
@@ -440,6 +480,10 @@ window.addEventListener('load', function () {
         }
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
         }
     }
 
@@ -453,6 +497,10 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
 
     function italianDesc() {
@@ -465,6 +513,10 @@ window.addEventListener('load', function () {
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
         }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
+        }
     }
 
     function frenchDesc() {
@@ -476,6 +528,10 @@ window.addEventListener('load', function () {
         }
         for (var d = 0; d < divChange.length; d++) {
             divChange[d].style.display = 'none';
+        }
+        for (var j = 0; j < divChange.length; j++) {
+            divchangeTwo[j].style.display = 'none';
+            backButton.classList.remove('d-none');
         }
     }
 });

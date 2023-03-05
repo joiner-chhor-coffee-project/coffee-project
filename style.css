@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lobster&display=swap');
 
 
-
-
-
-.logo-init {
-    color: white;
-    text-decoration: none;
-    font-size: xx-large;
-}
+/*NavBar*/
 header {
     position: fixed;
     width: 100%;
@@ -45,6 +38,12 @@ header {
     0 0 10px 0 #2eb2ff inset;
 }
 
+
+
+
+/**/
+/*Jumbotron*/
+/**/
 #jumbotron img{
     width: 400px;
     height: 250px;
@@ -59,10 +58,18 @@ header {
     display: flex;
     justify-content: center;
 }
+
+
+/**/
+/*Title*/
+/**/
 .title-hr {
     color: white;
     padding-top: 3px;
 }
+
+/**/
+/*headers*/
 h1 {
     color: white;
     text-align: center;
@@ -72,6 +79,9 @@ h2 {
     color: white;
 }
 
+/**/
+/*Coffee select*/
+/**/
 .form-container {
     margin-left: 20px;
 }
@@ -88,7 +98,10 @@ label {
     padding-top: .2em;
     padding-bottom: .2em;
 }
-
+.back-button {
+    position: relative;
+    bottom: 235px;
+}
 #submit:hover {
     background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
     color: #343434;
@@ -177,6 +190,9 @@ label {
     color: #343434;
 }
 
+
+/**/
+/**/
 /*about content below*/
 #about-hr {
     color: white;
@@ -194,6 +210,11 @@ label {
     text-align: center;
     margin-bottom: 40px;
 }
+
+
+
+/**/
+/**/
 /*Roast Survey Here*/
 #roast-hr {
     color: white;
@@ -321,7 +342,6 @@ li {
     font-size: 30px;
 }
 
-/*add this*/
 .classAddTitle {
     text-align: center;
     color: black;
@@ -334,26 +354,14 @@ li {
     bottom: 150px;
     width: 100%;
     text-indent: 10%;
-}
-.back-button {
-    position: relative;
-    bottom: 235px;
+    margin-top: 200px;
 }
 
+
 /**/
+/*media Queries below this line*/
 /**/
-/**/
-/**/
-
-
-
-
-
-
 @media screen and (min-width: 992px) {
-    .logo-init {
-        display: none;
-    }
     .bad-coffee2 {
         display: none;
     }
