@@ -177,11 +177,9 @@ label {
     border-right: 4px solid rgba(39, 250, 0, 0.87);
     border-bottom: 4px solid rgba(0, 255, 255, 0.85);
     border-left: 4px solid rgba(39, 250, 0, 0.87);
-    /*background: linear-gradient(to bottom, #1230ff, rgba(59, 127, 255, 0.68), rgba(99, 164, 255, 0.83));*/
 }
 
 span {
-    border-radius: 100vmax;
     position: absolute;
 }
 

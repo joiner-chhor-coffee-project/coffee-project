@@ -223,7 +223,7 @@ window.addEventListener('load', function () {
         let swapText = document.getElementsByClassName("about-content")[0];
         if (swapText.lightSwitch === true) {
             swapText.lightSwitch = false;
-            swapText.innerHTML = "Bad coffee is so bad that it's so terrible, but I guess its better than no coffee at all. But the coffee is really bad, unless I don't have any coffee I guess it's good.";
+            swapText.innerHTML = "Bad coffee is so bad that it's so terrible, but I guess it's better than no coffee at all. But the coffee is really bad, unless I don't have any coffee I guess it's good.";
         } else {
             swapText.lightSwitch = true;
             swapText.innerHTML = "Malum capulus tam malum est quod tam atrox, Sed ego coniecturam eius meliorem quam nullum omnino capulus. Sed capulus vere malum est, nisi nullum habeo capulus i coniecto bonum esse.";
