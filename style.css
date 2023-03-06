@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lobster&display=swap');
 
-* {
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -126,7 +130,7 @@ label {
 }
 
 #submit:hover {
-    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    background: linear-gradient(to bottom right, #00ffff, #40ff00, #00ffff);
     color: #0082fc;
 }
 
@@ -166,14 +170,150 @@ label {
 }
 
 #coffees {
+    position: relative;
     flex-wrap: wrap;
     height: 500px;
     overflow: auto;
-    border-top: 3px solid red;
-    border-right: 3px solid dodgerblue;
-    border-bottom: 3px solid lawngreen;
-    border-left: 3px solid yellow;
-    background: linear-gradient(to bottom, #1230ff, rgba(59, 127, 255, 0.68), rgba(99, 164, 255, 0.83));
+    border-top: 4px solid rgba(0, 255, 255, 0.85);
+    border-right: 4px solid rgba(39, 250, 0, 0.87);
+    border-bottom: 4px solid rgba(0, 255, 255, 0.85);
+    border-left: 4px solid rgba(39, 250, 0, 0.87);
+    /*background: linear-gradient(to bottom, #1230ff, rgba(59, 127, 255, 0.68), rgba(99, 164, 255, 0.83));*/
+}
+
+span {
+    border-radius: 100vmax;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+            90deg,
+            transparent 50%,
+            rgba(57, 255, 60, 0.5),
+            rgb(0, 248, 4)
+    );
+}
+
+.bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+            90deg,
+            rgb(57, 255, 20),
+            rgba(57, 255, 20, 0.5),
+            transparent 50%
+    );
+}
+
+.right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+            180deg,
+            transparent 30%,
+            rgba(0, 255, 255, 0.5),
+            rgb(0, 255, 255)
+    );
+}
+
+.left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+            180deg,
+            rgb(0, 234, 255),
+            rgba(0, 253, 253, 0.5),
+            transparent 70%
+    );
+}
+
+.top {
+    animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+}
+
+.right {
+    animation: animateRight 3s ease-in-out infinite;
+}
+
+.left {
+    animation: animateLeft 3s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+    25% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateBottom {
+    0%,
+    50% {
+        opacity: 0;
+        width: 0;
+    }
+
+    75% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateRight {
+    0%,
+    25% {
+        opacity: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 1;
+        height: 100%;
+    }
+
+    55%,
+    100% {
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes animateLeft {
+    0%,
+    75% {
+        opacity: 0;
+        bottom: 0;
+        height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
 }
 
 
@@ -235,7 +375,7 @@ label {
 }
 
 #add-submit:hover {
-    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    background: linear-gradient(to bottom right, #00ffff, #40ff00, #00ffff);
     color: #0080fd;
 }
 
@@ -317,7 +457,7 @@ label {
 }
 
 #survey-submit:hover {
-    background: linear-gradient(to bottom right, #41a4ff, #eeff54, #6dfa87);
+    background: linear-gradient(to bottom right, #00ffff, #40ff00, #00ffff);
     color: dodgerblue;
 }
 
@@ -368,8 +508,9 @@ li {
 
 /*JS hidden styles*/
 .coffee-link {
+    padding-left: 1em;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: .5s ease-in-out;
 }
 
