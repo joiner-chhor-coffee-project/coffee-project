@@ -4,10 +4,10 @@ function renderCoffee(coffee) { // this function pulls from the array and wraps 
     var html = '<div class="coffee">';
     html += '<a class="coffee-link" id="coffee-' + coffee.id + '" href="#"><h3>' + coffee.name + '</h3></a>';
     html += '<p>' + coffee.roast + '</p>';
-    html += '<span class="top"></span>\n' +
-        '<span class="right"></span>\n' +
-        '<span class="left"></span>\n' +
-        '<span class="bottom"></span>'
+    // html += '<span class="top"></span>\n' +
+    //     '<span class="right"></span>\n' +
+    //     '<span class="left"></span>\n' +
+    //     '<span class="bottom"></span>'
     html += '</div>';
 
     return html;

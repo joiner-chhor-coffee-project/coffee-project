@@ -179,13 +179,19 @@ label {
     border-left: 4px solid rgba(39, 250, 0, 0.87);
 }
 
+.borders {
+    position: relative;
+}
+
 span {
     position: absolute;
 }
 
+
+
 .top {
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: -11px;
     width: 0;
     height: 5px;
     background: linear-gradient(
@@ -197,8 +203,8 @@ span {
 }
 
 .bottom {
-    right: 0;
-    bottom: 0;
+    right: -11px;
+    bottom: -5px;
     height: 5px;
     background: linear-gradient(
             90deg,
@@ -210,7 +216,7 @@ span {
 
 .right {
     top: 0;
-    right: 0;
+    right: 8px;
     width: 5px;
     height: 0;
     background: linear-gradient(
@@ -222,8 +228,8 @@ span {
 }
 
 .left {
-    left: 0;
-    bottom: 0;
+    left: 7px;
+    bottom: -22px;
     width: 5px;
     height: 0;
     background: linear-gradient(
@@ -235,19 +241,19 @@ span {
 }
 
 .top {
-    animation: animateTop 3s ease-in-out infinite;
+    animation: animateTop 5s ease-in-out infinite;
 }
 
 .bottom {
-    animation: animateBottom 3s ease-in-out infinite;
+    animation: animateBottom 5s ease-in-out infinite;
 }
 
 .right {
-    animation: animateRight 3s ease-in-out infinite;
+    animation: animateRight 5s ease-in-out infinite;
 }
 
 .left {
-    animation: animateLeft 3s ease-in-out infinite;
+    animation: animateLeft 5s ease-in-out infinite;
 }
 
 @keyframes animateTop {
