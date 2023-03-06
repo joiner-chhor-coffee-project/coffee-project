@@ -51,8 +51,7 @@ function updateCoffees(e) { // function for roast drop down.
 //
 //
 //
-function coffeeName() { // function for searching for a coffee
-    //e.preventDefault();
+function coffeeName() { // function for filtering for a coffee
     var selectedName = coffeeSearch.value.toLowerCase(); // change coffee search input to lowercase
     var filteredCoffees = [];
 
